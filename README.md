@@ -3,7 +3,8 @@ IOET challenge interview
 
 
 ### In this part the best decission is use the power of the regular expressions
-```
+
+```python
 schedule = dict()
     
 for x in file:
@@ -22,6 +23,13 @@ name : ANDRES
 content : ['MO10:00-12:00', 'TH12:00-14:00', 'SU20:00-21:00']
 
 ```
+
+
+### But to make more Pythonist the process, i used a dictionary comprehension like this.
+```python
+schedule = {re.search(r'\w{3,}', x).group():re.findall(r'\=(.*)', x)[0].split(",") for x in file }
+```
+
 
 ### This is the output.
 <img src=".github/schedule.png" />
