@@ -10,22 +10,15 @@ from typing import (
 FILE_NAME = "Acme-offers.txt"
 
 """
->>> run this snipet if you make 
->>> the files to test the script
-
-file_content =<open quotes>
+##  Uncomment this part of code if you want to create "txt" files to test the script.
+file_content =<open triple quotes>
 RENE=MO10:00-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00-21:00
 ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
-<close quotes>
+<close triple quotes>
 def make_files_content() -> None:
     with open("<file_name.txt>", "w") as f:
         f.write(file_content)
-
-
-['MO10:00-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00-21:00']
-['MO10:00-12:00,TH12:00-14:00,SU20:00-21:00']
-['MO10:00-12:00,TH12:00-14:00,SU20:00-21:00']
 """
 
 

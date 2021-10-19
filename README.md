@@ -46,7 +46,3 @@ content : ['MO10:00-12:00', 'TH12:00-14:00', 'SU20:00-21:00']
 ```python
 schedule = {re.search(r'\w{3,}', x).group():re.findall(r'\=(.*)', x)[0].split(",") for x in file }
 ```
-
-
-### This is the output.
-<img src=".github/schedule.png" />
