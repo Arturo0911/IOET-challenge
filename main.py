@@ -37,7 +37,7 @@ def challenge_solution() -> None:
     schedule = {re.search(r'\w{3,}', x).group():re.findall(r'\=(.*)', x)[0].split(",") for x in file }
 
     try:
-        for pos, (key,value) in enumerate(schedule.items()):
+        for key,value in schedule.items():
             for new_key, new_value in schedule.items():
                 if key != new_key:
                     print(f"{key}-{new_key}:{match_keys(value, new_value)}")
